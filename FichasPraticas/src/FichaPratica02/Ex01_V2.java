@@ -2,8 +2,10 @@ package FichaPratica02;
 
 import java.util.Scanner;
 
-public class Ex01 {
+public class Ex01_V2 {
     public static void main(String[] args) {
+
+        // ASSUMIMOS QUE PODEM SER DIFERENTES
 
         // Criação do Scanner - Vamos ler inputs do utilizador
         Scanner input = new Scanner(System.in);
@@ -22,7 +24,13 @@ public class Ex01 {
         if (num1 > num2) {
             System.out.println("Maior: " + num1);
         } else {
-            System.out.println("Maior: " + num2);
+
+            if(num1 < num2){
+                System.out.println("Maior: " + num2);
+            }else{
+                System.out.println("São iguais!");
+            }
+
         }
 
     }
