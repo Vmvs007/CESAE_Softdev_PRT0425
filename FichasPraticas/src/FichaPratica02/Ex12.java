@@ -2,7 +2,7 @@ package FichaPratica02;
 
 import java.util.Scanner;
 
-public class Ex_12 {
+public class Ex12 {
     public static void main(String[] args) {
 
         // Criação do Scanner - Vamos ler inputs do utilizador
