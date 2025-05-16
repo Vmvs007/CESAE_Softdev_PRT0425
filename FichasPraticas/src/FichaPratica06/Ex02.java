@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ex02 {
 
+    /**
+     * Função que lê um número inteiro e positivo da consola
+     * @return Número inteiro e positivo
+     */
     public static int lerInteiroPositivo() {
         Scanner input = new Scanner(System.in);
 
@@ -17,6 +21,10 @@ public class Ex02 {
         return numeroUtilizador;
     }
 
+    /**
+     * Funçãao que imprime x asteriscos
+     * @param quantidade Quantidade de asteriscos a ser impresso
+     */
     public static void imprimirAsteriscos(int quantidade) {
 
         for (int i = 0; i < quantidade; i++) {
