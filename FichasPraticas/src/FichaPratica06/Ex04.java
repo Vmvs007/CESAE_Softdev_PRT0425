@@ -88,6 +88,7 @@ public class Ex04 {
                     if(par(numero) && positivo(numero) && primo(numero)){
                         System.out.println("É par, positivo e primo ao mesmo tempo");
                     }
+                    break;
 
                 case 0: // Sair
                     System.out.println("A encerrar programa...");
