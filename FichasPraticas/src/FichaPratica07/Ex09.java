@@ -73,6 +73,63 @@ public class Ex09 {
         }
     }
 
+    public static void musicaMaisLonga(String[][] matriz) {
+
+        String nomeMaiorMusica = "", artistaMaiorMusica = "", generoMaiorMusica = "";
+        int duracaoTotalMaiorMusica = 0;
+
+        for (int linha = 0; linha < matriz.length; linha++) {
+
+            // Calcular a duração total (em segundos) da musica atual
+            String duracaoNaoTratada = matriz[linha][3];
+            String[] duracaoDividida = duracaoNaoTratada.split(":");
+
+            int minutosMusicaAtual = Integer.parseInt(duracaoDividida[0]);
+            int segundosMusicaAtual = Integer.parseInt(duracaoDividida[1]);
+
+            int segundosTotaisMusicaAtual = (minutosMusicaAtual * 60) + segundosMusicaAtual;
+
+            // Comparar e perceber se é a maior música
+            if (segundosTotaisMusicaAtual > duracaoTotalMaiorMusica) {
+                duracaoTotalMaiorMusica = segundosTotaisMusicaAtual;
+                nomeMaiorMusica = matriz[linha][0];
+                artistaMaiorMusica = matriz[linha][1];
+                generoMaiorMusica = matriz[linha][2];
+            }
+        }
+
+        System.out.println("Nome: " + nomeMaiorMusica);
+        System.out.println("Artista: " + artistaMaiorMusica);
+        System.out.println("Género: " + generoMaiorMusica);
+
+
+    }
+
+    public static void pesquisarMusicasDuracao(String[][] matriz, int minutosProcurar, int segundosProcurar) {
+
+        System.out.println("\nMúsicas acima de " + minutosProcurar + ":" + segundosProcurar);
+
+        int totalProcurar = (minutosProcurar * 60) + segundosProcurar; // Pegamos nos valores que foram passados por parametro e passamos tudo para segundos
+
+        for (int linha = 0; linha < matriz.length; linha++) { // For: porque precisamos de percorrer todas as linhas (musicas) da matriz
+
+            // Calcular a duração total (em segundos) da musica atual
+            String duracaoNaoTratada = matriz[linha][3]; // Apanhamos a informação bruta (por exemplo: "6:06")
+            String[] duracaoDividida = duracaoNaoTratada.split(":"); // Dividimos usando o split. ["6"]["06"]
+
+            // Passamos para duas variaveis individuais
+            int minutosMusicaAtual = Integer.parseInt(duracaoDividida[0]); // Minutos são a posição 0 do array duracaoDividida
+            int segundosMusicaAtual = Integer.parseInt(duracaoDividida[1]); // Segundos são a posição 1 do array duracaoDividida
+
+            int segundosTotaisMusicaAtual = (minutosMusicaAtual * 60) + segundosMusicaAtual; // Calcular o total de segundos da música atual
+
+            // Comparar e perceber se a musica tem o minimo de duração para ser impressa
+            if (segundosTotaisMusicaAtual > totalProcurar) {
+                System.out.println(matriz[linha][0] + " | " + matriz[linha][1] + " | " + matriz[linha][2] + " | " + matriz[linha][3]);
+            }
+        }
+    }
+
     /**
      * Função que contém o meno do programa
      */
@@ -118,14 +175,25 @@ public class Ex09 {
 
                 case 3:
                     System.out.println("_*_*_*_*_*_ Música Mais Longa _*_*_*_*_*_ ");
+                    musicaMaisLonga(matriz);
                     break;
 
                 case 4:
                     System.out.println("_*_*_*_*_*_ Pesquisar por Duração _*_*_*_*_*_ ");
+                    System.out.println("Acima de quantos minutos e segundos?");
+
+                    System.out.print("Minutos: ");
+                    int minutosInput = input.nextInt();
+
+                    System.out.print("Segundos: ");
+                    int segundosInput = input.nextInt();
+
+                    pesquisarMusicasDuracao(matriz, minutosInput, segundosInput);
                     break;
 
                 case 5:
                     System.out.println("_*_*_*_*_*_ Total de Músicas _*_*_*_*_*_ ");
+                    System.out.println(matriz.length);
                     break;
 
                 case 0:
