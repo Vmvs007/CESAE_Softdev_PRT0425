@@ -49,6 +49,11 @@ public class Ex09 {
         return matrizCompleta;
     }
 
+    /**
+     * Função que pesquisa músicas de um determinado género
+     * @param matriz Matriz com todas as músicas
+     * @param generoPesquisa Género a pesquisar
+     */
     public static void pesquisarMusicasGenero(String[][] matriz, String generoPesquisa) {
 
         System.out.println("\n_*_*_ Músicas de " + generoPesquisa + " _*_*_");
@@ -61,6 +66,11 @@ public class Ex09 {
     }
 
 
+    /**
+     * Função que pesquisa músicas de um determinado artista
+     * @param matriz Matriz com todas as músicas
+     * @param artistaPesquisa Artista a pesquisar
+     */
     public static void pesquisarMusicasArtista(String[][] matriz, String artistaPesquisa) {
 
         System.out.println("\n_*_*_ Músicas de " + artistaPesquisa + " _*_*_");
@@ -73,6 +83,10 @@ public class Ex09 {
         }
     }
 
+    /**
+     * Função que imprime a música mais longa
+     * @param matriz Matriz com todas as músicas
+     */
     public static void musicaMaisLonga(String[][] matriz) {
 
         String nomeMaiorMusica = "", artistaMaiorMusica = "", generoMaiorMusica = "";
@@ -105,6 +119,12 @@ public class Ex09 {
 
     }
 
+    /**
+     * Função que pesquisa músicas acima de uma determinada duração (minutos:segundos)
+     * @param matriz Matriz com todas as músicas
+     * @param minutosProcurar Minutos mínimos
+     * @param segundosProcurar Segundos mínimos
+     */
     public static void pesquisarMusicasDuracao(String[][] matriz, int minutosProcurar, int segundosProcurar) {
 
         System.out.println("\nMúsicas acima de " + minutosProcurar + ":" + segundosProcurar);
