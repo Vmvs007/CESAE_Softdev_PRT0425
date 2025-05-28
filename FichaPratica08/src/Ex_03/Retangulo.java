@@ -17,7 +17,7 @@ public class Retangulo {
         this.altura = altura;
         this.largura = largura;
     }
-    
+
     public double calcularPerimetro() {
         return this.largura + this.largura + this.altura + this.altura;
     }
