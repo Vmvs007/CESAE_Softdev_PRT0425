@@ -39,7 +39,7 @@ public class Funcionario {
     public double getSalario() {
         return salario;
     }
-    
+
     public void setDepartamento(String departamento) {
         this.departamento = departamento;
     }
