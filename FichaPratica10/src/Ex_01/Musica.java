@@ -13,6 +13,10 @@ public class Musica {
         this.duracao = duracao;
     }
 
+    public int getDuracao() {
+        return duracao;
+    }
+
     public void exibirDetalhes() {
         System.out.println(this.titulo + " | " + this.genero + " | " + this.artista + " | " + this.duracao);
     }
