@@ -11,4 +11,9 @@ public class FrutoMar extends Topping{
         super(id, nome, medida, kcalPorMedida, origem);
         this.tipo = tipo;
     }
+
+    @Override
+    public void imprimirTipoIngrediente() {
+        System.out.println("Isto é um Fruto do Mar");
+    }
 }

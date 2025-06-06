@@ -11,4 +11,9 @@ public class Vegetal extends Topping{
         super(id, nome, medida, kcalPorMedida, origem);
         this.tipo = tipo;
     }
+
+    @Override
+    public void imprimirTipoIngrediente() {
+        System.out.println("Isto é um Vegetal");
+    }
 }

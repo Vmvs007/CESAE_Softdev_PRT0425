@@ -6,6 +6,8 @@ import Ex_03.Ingredientes.*;
 public class Main {
     public static void main(String[] args) {
 
+        // Não funciona: Ingrediente x = new Ingrediente(10,"X",UnidadeMedida.GRAMAS,1);
+
         Base baseFinaItaliana = new Base(5, "Base Italiana", 1, TipoBase.MASSA_FINA, "Tradicional não falha");
 
         Vegetal molhoTomate = new Vegetal(10, "Molho Tomate", UnidadeMedida.LITROS, 350, OrigemIngrediente.NACIONAL, TipoVegetal.TOMATE);

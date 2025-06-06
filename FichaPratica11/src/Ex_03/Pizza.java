@@ -126,6 +126,9 @@ public class Pizza {
         for (IngredientePizza ingredientePizzaAtual : this.listaIngredientesPizza) {
             System.out.print("Ingrediente " + contadorIngredientesPizza++ + ": ");
             ingredientePizzaAtual.exibirDetalhes();
+
+            // Este é o método abstrato de Ingrediente, só conseguimos invocar porque temos a certeza que ele existe em todos os Ingredientes (inclusive descendentes)
+            ingredientePizzaAtual.getIngrediente().imprimirTipoIngrediente();
         }
     }
 

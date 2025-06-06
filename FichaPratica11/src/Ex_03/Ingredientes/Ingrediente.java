@@ -2,7 +2,7 @@ package Ex_03.Ingredientes;
 
 import Ex_03.Enums.UnidadeMedida;
 
-public class Ingrediente {
+public abstract class Ingrediente {
     private int id;
     private String nome;
     private UnidadeMedida medida;
@@ -47,6 +47,7 @@ public class Ingrediente {
         return "";
     }
 
+    public abstract void imprimirTipoIngrediente();
 
     public void exibirDetalhes() {
         System.out.print("[ " + this.id + " | " + this.nome + " | " + this.medida + " | " + this.kcalPorMedida + " Kcal ]");

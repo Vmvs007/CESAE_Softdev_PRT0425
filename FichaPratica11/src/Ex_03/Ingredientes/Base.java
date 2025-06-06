@@ -13,4 +13,9 @@ public class Base extends Ingrediente {
         this.tipo = tipo;
         this.descricao = descricao;
     }
+
+    @Override
+    public void imprimirTipoIngrediente() {
+        System.out.println("Isto é uma Base");
+    }
 }
