@@ -6,5 +6,7 @@ public class MainCores {
         System.out.println(ConsoleColors.CYAN_BACKGROUND_BRIGHT + "Fundo Espetacular" + ConsoleColors.RESET);
 
         System.out.println("\uD83D\uDC51");
+
+        System.out.println("⛰\uFE0F");
     }
 }
