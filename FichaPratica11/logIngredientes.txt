@@ -1,0 +1,68 @@
+O utilizador está a tentar acrescentar: Base Italiana com 200.0 quantidade.
+IngredienteNovo é uma base e a Pizza não tem nenhum ingrediente! Tudo certo!
+Começamos a pizza com uma boa base :D
+
+O utilizador está a tentar acrescentar: Molho Tomate com 0.15 quantidade.
+IngredienteNovo é um Topping e a Pizza já tem uma base! Tudo certo!
+Acrescentamos mais um ingrediente à pizza :D
+
+O utilizador está a tentar acrescentar: Queijo Mozzarela com 200.0 quantidade.
+IngredienteNovo é um Topping e a Pizza já tem uma base! Tudo certo!
+Acrescentamos mais um ingrediente à pizza :D
+
+O utilizador está a tentar acrescentar: Pepperoni com 8.0 quantidade.
+IngredienteNovo é um Topping e a Pizza já tem uma base! Tudo certo!
+Acrescentamos mais um ingrediente à pizza :D
+
+O utilizador está a tentar acrescentar: Cogumelo com 10.0 quantidade.
+IngredienteNovo é um Topping e a Pizza já tem uma base! Tudo certo!
+Acrescentamos mais um ingrediente à pizza :D
+
+O utilizador está a tentar acrescentar: Azeitona Preta com 10.0 quantidade.
+
+Vamos calcular as calorias da pizza!
+Vamos acrescentar: 200.0
+Neste momento está a: 200.0
+Vamos acrescentar: 52.5
+Neste momento está a: 252.5
+Vamos acrescentar: 300.0
+Neste momento está a: 552.5
+Vamos acrescentar: 160.0
+Neste momento está a: 712.5
+Vamos acrescentar: 30.0
+Neste momento está a: 742.5
+Portanto, a pizza tem 742.5 Kcal totais!
+
+O utilizador está a tentar remover o ingrediente com o id: 5
+Estamos a tentar encontrar o ingrediente com aquele id
+Estou a analisar o ingrediente: Base Italiana que tem o id: 5
+Estou a analisar o ingrediente: Molho Tomate que tem o id: 10
+Estou a analisar o ingrediente: Queijo Mozzarela que tem o id: 40
+Estou a analisar o ingrediente: Pepperoni que tem o id: 55
+Estou a analisar o ingrediente: Cogumelo que tem o id: 90
+
+Vamos calcular as calorias da pizza!
+Vamos acrescentar: 200.0
+Neste momento está a: 200.0
+Vamos acrescentar: 52.5
+Neste momento está a: 252.5
+Vamos acrescentar: 300.0
+Neste momento está a: 552.5
+Vamos acrescentar: 160.0
+Neste momento está a: 712.5
+Vamos acrescentar: 30.0
+Neste momento está a: 742.5
+Portanto, a pizza tem 742.5 Kcal totais!
+
+Vamos calcular as calorias da pizza!
+Vamos acrescentar: 200.0
+Neste momento está a: 200.0
+Vamos acrescentar: 52.5
+Neste momento está a: 252.5
+Vamos acrescentar: 450.0
+Neste momento está a: 702.5
+Vamos acrescentar: 160.0
+Neste momento está a: 862.5
+Vamos acrescentar: 30.0
+Neste momento está a: 892.5
+Portanto, a pizza tem 892.5 Kcal totais!
