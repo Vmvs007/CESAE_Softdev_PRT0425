@@ -1,3 +1,5 @@
+package Ex_01;
+
 public class MeleeAttackStrategy implements AttackStrategy{
 
     @Override

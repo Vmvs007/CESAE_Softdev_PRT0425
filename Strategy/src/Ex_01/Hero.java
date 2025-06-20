@@ -1,3 +1,5 @@
+package Ex_01;
+
 public class Hero {
     private String nome;
     private int vida;
