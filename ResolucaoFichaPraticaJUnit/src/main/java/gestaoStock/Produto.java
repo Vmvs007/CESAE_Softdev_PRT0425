@@ -1,4 +1,4 @@
-package Ex_08;
+package gestaoStock;
 
 public class Produto {
     private String nome;
@@ -10,7 +10,22 @@ public class Produto {
         this.preco = preco;
     }
 
-    public double precoComDesconto(int descontoFixo) {
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public int getQuantidadeStock() {
+        return quantidadeStock;
+    }
+
+    public double precoComDesconto(double descontoFixo) {
+        if(descontoFixo>this.preco  || descontoFixo<0){
+            throw new IllegalArgumentException("Desconto invalido");
+        }
         return this.preco - descontoFixo;
     }
 
