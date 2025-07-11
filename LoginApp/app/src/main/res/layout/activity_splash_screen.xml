@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue"
+    tools:context=".SplashScreenActivity"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/text_splash_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SUSHI VEGAN"
+        android:textSize="40sp"
+        android:textColor="@color/blue"
+        android:fontFamily="casual"
+        />
+
+    <TextView
+        android:id="@+id/text_aguarde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aguarde enquanto a aplicação carrega..."
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:textSize="15sp"/>
+
+</LinearLayout>

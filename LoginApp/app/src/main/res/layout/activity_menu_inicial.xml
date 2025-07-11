@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuInicialActivity">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sushi Vegan"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:paddingTop="50dp"
+        android:paddingBottom="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/image_sushi_vegan"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:srcCompat="@drawable/sushi_brackground" />
+
+    <Button
+        android:id="@+id/button_fazer_encomenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="FAZER ENCOMENDA"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/button_consultar_encomendas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="HISTÓRICO DE ENCOMENDAS"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/button_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="AVALIAR ENCOMENDA"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="25dp"/>
+
+</LinearLayout>
